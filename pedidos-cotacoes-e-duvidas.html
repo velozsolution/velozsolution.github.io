@@ -1,0 +1,42 @@
+--- 
+layout: page 
+title: Pedidos, Cotações e Dúvidas
+description: Canal exclusivo para fazer pedido ou cotação de produtos 
+---
+<div class="container">
+    <p>Este é um canal exclusivo para você fazer os pedidos, cotações ou tirar dúvidas sobre os produtos revendidos pela Veloz Solution.</p>
+    <p>Caso queira, você também pode acessar nosso <a href="{{ site.url }}/faq" title="link FAQ" style="font-style: italic; font-weight: bolder;">FAQ</a>.</p>
+    <form action="" method="post" class="form-contact-pedidos">
+        
+        <label for="iName" class="hidden">Nome completo:</label>
+        <input type="text" id="iName" name="nName" placeholder="* Nome completo" required>
+
+        <label for="iEmpresa" class="hidden">Empresa:</label>
+        <input type="text" id="iEmpresa" name="nEmpresa" placeholder="* Empresa" required>
+
+        <label for="iCpf" class="hidden">CPF/CNPJ:</label>
+        <input type="text" id="iCpf" name="nCpf" placeholder="* CPF ou CNPJ" required>
+        
+        <label for="iPhone" class="hidden">Telefone:</label>
+        <input type="text" id="iPhone" name="nPhone" placeholder="* Telefone" required>
+
+        <label for="iEnd" class="hidden">Endereço:</label>
+        <input type="text" id="iEnd" name="nEnd" placeholder="* Endereço" required>
+
+        <label for="iEmail" class="hidden">E-mail:</label>
+        <input type="text" id="iEmail" name="nEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="* E-mail" title="ex.: seunome@gmail.com" required>
+
+        <label for="iMsg" class="hidden">Pedido / Cotação / Dúvida:</label>
+        <textarea id="iMsg" name="nMsg" rows="5" placeholder="* Digite sua solicitação aqui" required></textarea>
+        
+        <span class="obs">* Todos os campos são obrigatórios</span>
+        
+        <!-- Alerta -->
+        <p class="alert-success">Sua solicitação foi enviada com sucesso. Responderemos o mais breve possível</p>
+        <p class="alert-error">Erro ao enviar sua solicitação. Por favor atualize a página e tente novamente</p>
+        <!-- End Alerta -->
+        <p>
+            <button class="btn btn-send-contact">Enviar</button>
+        </p>
+    </form>
+</div>

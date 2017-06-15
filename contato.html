@@ -1,0 +1,67 @@
+--- 
+layout: page 
+title: Contato
+permalink: /contato/ 
+description: Ficaremos felizes em atendê-lo. Estamos a disposição para tirar qualquer dúvida sua.
+---
+<div class="main-contact">
+  <div class="row">
+    <div class="col col-8">
+      <p>Solicite a visita do Engenheiro de serviços gratuitamente e ganhe um relatório do estado atual de suas instalações. Responderemos o mais breve possível. Pode confiar, somos rápidos no teclado!</p>
+      <form action="https://formspree.io/contato@velozsolution.com" method="post" class="form-contact">
+        <label for="iName" class="hidden">Nome:</label>
+        <input type="text" id="iName" name="nName" placeholder="* Nome" required>
+
+        <label for="iPhone" class="hidden">Telefone:</label>
+        <input type="text" id="iPhone" name="nPhone" placeholder="* Telefone" required>
+
+        <label for="iEnd" class="hidden">Endereço:</label>
+        <input type="text" id="iEnd" name="nEnd" placeholder="* Endereço" required>
+
+        <label for="iEmail" class="hidden">E-mail:</label>
+        <input type="text" id="iEmail" name="nEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="* E-mail" title="ex.: seunome@gmail.com" required>
+
+        <label for="iSetor" class="hidden">Setor:</label>
+        <select id="iSetor">
+          <option disabled selected>* Selecione um setor</option>
+          <option value="Contato Veloz">Contato Veloz</option>
+          <option value="Orçamento Veloz">Orçamento Veloz</option>
+          <option value="Compras Veloz">Compras Veloz</option>
+          <option value="RH Veloz">RH Veloz</option>
+          <option value="Comercial Veloz">Comercial Veloz</option>
+        </select>
+
+        <label for="iMsg" class="hidden">Mensagem:</label>
+        <textarea id="iMsg" name="nMsg" rows="5" placeholder="* Mensagem" required></textarea>
+        <span class="obs">* Todos os campos são obrigatórios</span>
+
+        <!-- Alerta -->
+        <p class="alert-success">Mensagem enviada com sucesso. Responderemos o mais breve possível</p>
+        <p class="alert-error">Erro ao enviar o e-mail. Por favor atualize a página e tente novamente</p>
+        <!-- End Alerta -->
+        
+        <p><button class="btn btn-send-contact">Enviar</button></p>
+      </form>
+    </div>
+    <div class="col col-4 main-contact-page">
+      <img src="{{ "/assets/img/call-center.jpg" | prepend: site.url }}" alt="Atendimento Veloz Solution">
+      <h2>Informações de <span class="dest">Contato</span></h2>
+      <p>Ou se preferir, use um dos nossos canais de atendimento abaixo.</p>
+      <ul>
+        <li><span class="icon-location"></span>Rua {{ site.end }}</li>
+        <li><span class="icon-phone"></span>{{ site.phonelink }}</li>
+        <li><span class="icon-whatsapp"></span>{{ site.celphonelink }}</span></li>
+        <li>
+          <span class="icon-envelop"></span> Setores Especializados
+            <p><b>Contato Veloz</b>: {{ site.emaillink }}</p>
+            <p><b>Orçamento Veloz</b>: <a href="mailto:orcamento@velozsolution.com">orcamento@velozsolution.com</a></p>
+            <p><b>Compras Veloz</b>: <a href="mailto:compras@velozsolution.com">compras@velozsolution.com</a></p>
+            <p><b>RH Veloz</b>: <a href="mailto:rhveloz@velozsolution.com">rhveloz@velozsolution.com</a></p>
+            <p><b>Vendas Veloz</b>: <a href="mailto:vendas@velozsolution.com">vendas@velozsolution.com</a></p>
+            <b>Financeiro Veloz</b>: <a href="mailto:financeiro@velozsolution.com">financeiro@velozsolution.com</a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

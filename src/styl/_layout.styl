@@ -1,0 +1,600 @@
+body#home .home
+body#institucional .institucional
+body#economia .economia
+body#clientes .clientes
+body#contato .contato
+body#produtos .produtos
+	color $yellow
+	
+.page-title
+	margin rem(30px) 0 rem(20px)
+	font-size rem(28px)
+	font-weight normal
+	+above(768px)
+		font-size rem(34px)
+
+.page-title-line
+	margin rem(30px) 0 rem(20px)
+	font-size rem(22px)
+	font-weight normal
+	&:after
+		content ''
+		display block
+		margin-top rem(18px)
+		width rem(80px)
+		height rem(3px)
+		background-color $yellow
+	+above(768px)
+		font-size rem(28px)
+
+.main-home
+	margin 0
+	padding rem(30px) 0 rem(50px)
+	width 100%
+	background url('../img/home-bg.jpg') no-repeat fixed 
+	background-size cover
+	text-align center
+	.main-home-welcome
+		margin 0
+		color $white
+		font-size rem(20px)
+		text-transform uppercase
+	.main-home-line
+		margin rem(20px) auto 0
+		width rem(40px)
+		height rem(3px)
+		background-color $yellow
+	p
+		margin rem(30px) 0 rem(60px)
+		color $white
+	.main-home-btn-orcamento
+		padding rem(12px) rem(16px)
+	+above(rem(480px))
+		padding rem(50px) 0 rem(80px)
+		.main-home-title
+			font-size rem(45px)
+		p
+			font-size rem(18px)
+		.main-home-btn-orcamento
+			font-size rem(20px)		
+
+.resume-about
+	margin rem(40px) 0 rem(20px)
+	background-color $black
+	color $white
+	.resume-about-img, .resume-about-content
+		margin-bottom 0
+	.resume-about-img
+		margin-bottom rem(50px)
+		img
+			display table
+			margin 0 auto
+			padding 0
+			overflow hidden
+	.resume-about-content
+		h2
+			padding-left rem(20px)
+			border-left 3px solid $yellow
+	+above(rem(650px))
+		.resume-about-img
+			margin-bottom 0
+		
+.service-box
+	position relative
+	overflow hidden 
+	a
+		position absolute
+		right 0
+		bottom 0
+		left 0
+		padding rem(15px) rem(10px)
+		background-color rgba(0,0,0,.6)
+		color $white
+		text-shadow 1px solid $black
+		text-align center
+		z-index 10
+	h3
+		font-size rem(14px)
+		font-weight normal
+		margin 0
+		padding 0
+		+above(rem(960px))
+			font-size rem(16px)
+	img
+		width 100%
+		display table
+		transition $transition
+	.news-services
+		position absolute
+		top 0
+		right 0
+		padding rem(5px)
+		color $yellow
+		font-size rem(11px)
+		text-transform uppercase
+	&:hover
+		img
+			transform scale(1.3)
+
+.our-partners
+	ul
+		display flex
+		flex-flow row wrap
+	li
+		flex 1 0 rem(200px)
+		margin rem(20px)
+		display inline-block
+		position relative		
+	a
+		img
+			filter grayscale(1)
+			transition $transition
+			&:hover
+				filter grayscale(0)
+					
+.planos
+	margin rem(70px) 0 0
+	.planos-box
+		position relative
+	.icon-planos
+		display block
+		margin 0 auto
+		width rem(91px)
+		height rem(91px)
+		background url('../img/icon-box-planos.png') no-repeat
+		&.agua
+			background-position 0 0
+		&.energia
+			background-position rem(-101px) 0
+		&.manutencao
+			background-position rem(-202px) 0
+		&.automacao
+			background-position rem(-303px) 0
+	.page-title-planos
+		font-size rem(22px)
+		text-align center
+	.sigla
+		display table
+		width 100%
+		margin-bottom rem(20px)
+		padding rem(5px)
+		text-align center
+		font-weight 900
+		font-size rem(18px)
+	+above(rem(768px))
+		.planos-box
+			height rem(320px)
+		.see-more-planos
+			position absolute
+			width 100%
+			bottom 0
+			left 0
+			
+.plans-container
+	+above(rem(768px)) 
+		.col
+			margin-top rem(20px)
+			margin-bottom rem(20px)
+	.plans
+		background-color #333
+		display table
+		width 100%
+		transition $transition
+		&:hover
+			opacity .9
+		.plans-top
+			margin -9px auto 0
+			width 90%
+			height rem(9px) 
+			background-color #222
+		.header-plans
+			padding rem(15px) 0
+			display block
+			span
+				padding-left rem(30px)
+				color #888
+				text-transform uppercase
+				font-weight 900
+				font-size rem(14px)
+				border-left rem(4px) solid $yellow
+		h3
+			margin 0
+			padding rem(25px) 0
+			text-align center
+			background-color #222
+			color $yellow
+			font-size rem(25px)
+		li
+			padding rem(15px) 0
+			border-bottom rem(1px) solid #222
+			color #888
+			text-align center
+			&:last-child
+				border-bottom none
+				padding rem(30px) 0
+
+.testimonial
+	p
+		text-align center
+	ul
+		padding rem(50px) 0
+		display flex
+		flex-wrap wrap
+		justify-content center
+		text-align center
+		li
+			flex 1 0 rem(150px)
+			margin 0 rem(20px) rem(20px)
+			display inline-block
+			position relative		
+	.name, .date, .depo, .star
+		display block
+	.name
+		font-size rem(20px)
+	.date
+		font-size rem(14px)
+		color #d6d6d6
+	.depo
+		padding rem(10px) 0
+	.star
+		color #f9de5a
+
+.need-help
+	margin rem(20px) 0 0
+	padding rem(20px) 0 0
+	background-color #d6d6d6
+	text-align center
+	h2
+		margin-bottom 0
+		font-size rem(30px)
+	.need-help-subtitle
+		font-size rem(18px)
+		font-weight 900
+		margin 0 0 rem(40px) 0
+	.icon
+		display inline-block
+		padding rem(20px)
+		font-size rem(40px)
+		background-color $white
+		border-radius rem(100px)
+		margin-bottom rem(10px)
+
+.informative
+	margin 0
+	padding rem(40px) 0
+	background url('../img/faixa-bg.jpg') no-repeat top center
+	background-size cover
+	box-sizing cover
+	.informative-text
+		padding rem(15px)
+		background-color rgba(0,0,0,.6)
+		color $white
+		h2
+			margin-top 0
+		p 
+			margin 0
+
+.institucional-page
+	.institucional-qualities
+		margin 0
+		padding rem(40px) 0
+		background-color #000
+		color $white		
+		text-align center
+		h2
+			margin 0
+		ul
+			display flex
+			flex-wrap wrap
+			justify-content center
+		li
+			padding rem(40px) rem(20px) 0
+			.qualities
+				font-size rem(20px)
+				display block
+				text-transform uppercase
+			.icon-star-full
+				color #f9de5a
+	.institucional-contact
+		margin 0 0 rem(80px)
+		padding rem(40px) 0
+		width 100%
+		background url('../img/faixa-bg.jpg')
+		text-align center
+		color $white
+		h2
+			margin 0
+		p
+			margin rem(15px) 0 rem(50px)
+			font-size rem(18px)
+		.institucional-btn
+			padding rem(12px) rem(16px)
+
+.main-contact-page
+	h2
+		margin 0
+	li
+		padding rem(20px) 0
+		border-bottom 2px solid $lgrey
+		&:last-child
+			border-bottom none
+	[class^=icon-]
+		margin-right rem(7px)
+		
+.metodologias
+	h3
+		margin-bottom rem(30px)
+	li
+		margin-bottom rem(15px)
+		&:last-child
+			margin-bottom 0			
+	img
+		display table
+		width rem(200px)
+
+.economia-veloz
+	table
+		width 100%
+		border-collapse collapse
+		border-spacing 0
+		+below(rem(960px))
+			display block
+			width auto
+			overflow-x auto
+			white-space nowrap
+		tr:nth-child(2n+1)
+			background-color #d6d6d6
+		tr:first-child
+			background-color $black
+			color $yellow
+		th, td
+			padding rem(10px)
+		th
+			text-align left
+	img
+		display table
+	.fluxograma
+		max-width 100%
+		margin rem(30px) auto
+.banner
+	position relative
+	img
+		display table
+	span
+		position absolute
+		right 0
+		bottom 0
+		left 0
+		padding rem(15px) rem(10px)
+		background-color $black
+		color $yellow
+		font-size rem(20px)
+		text-shadow 1px solid $black
+		text-align center
+		text-transform uppercase
+		z-index 10
+		
+.programa-de-conservacao-da-agua
+	img
+		display table
+		margin rem(50px) auto
+	ol
+		list-style none
+		li:before
+			content '› '
+	
+.list-planos-page
+	li
+		padding rem(3px) 0
+		
+.page-sge
+	img
+		display table
+		margin rem(50px) auto
+		display block
+.listagem-sge
+	h2
+		font-size rem(18px)
+		cursor pointer
+		.btn-plus
+			&:before
+				content '› '
+	.drop
+		display none
+		padding-left rem(25px)
+	ol
+		list-style none
+		li
+			padding rem(3px) 0
+		li:before
+			content '› '
+			
+
+.produtos-categoria
+	text-align center
+	h2
+		color $black
+	img 
+		width 100%
+
+.listagem-tintas
+	h3
+		padding rem(8px)
+		background-color #d6d6d6
+		box-shadow 0 2px 4px rgba(0,0,0,0.3)
+		cursor pointer
+		.btn-plus
+			&:before
+				content '+ '
+				font-weight 900
+	.drop
+		display none
+		padding-left rem(25px)
+
+.listagem-faq
+	h3
+		cursor pointer
+	.drop
+		display none
+		padding-left rem(25px)
+
+.produto-arejador 
+	h2
+		font-size rem(18px)
+
+.capa-arejador, .capa-veda-porta-automatico, .capa-cores-policarbonatos, .capa-acessorios-e-metais
+	position relative
+	img
+		display table
+	[class^='icon-']
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		background-color rgba(0,0,0,0.5)
+		color #fff
+		font-size rem(32px)
+		display flex
+		align-items center
+		justify-content center
+		opacity 0
+		transition $transition
+		&:hover
+			opacity 1
+
+.lightbox 
+	display none
+	top 0
+	left 0
+	position fixed
+	z-index 9000000000
+	width 100%
+	height 100%
+	background rgba(0,0,0,0.8)
+	&:target
+		display flex
+		align-items center
+		justify-content center
+	img
+		position relative
+		max-width 90%
+		max-height 80%
+		animation lightbox .3s
+	.lightbox-close
+		padding rem(10px)
+		position absolute
+		top 0
+		right 0
+		display block
+		background-color $yellow
+		color #000
+
+.policarbonatos
+	h2
+		margin-top 0
+	.policarbonatos-capa
+		img
+			width 100%
+
+.policarbonatos-table, .veda-porta-automatico-table
+	table
+		width 100%
+		border-collapse collapse		
+	table, td 
+		border 1px solid #000
+	tr:first-child
+		background-color #000
+		color $yellow
+	td
+		padding 5px
+		
+.sem-foto
+	width 100%
+	height 100px
+	
+.prismatico1
+	background-color #f0f6fa
+.prismatico2
+	background-color #e5e5e5
+.prismatico3
+	background-color #d7dbe4
+	
+.telha1
+	background-color #757474
+.telha2
+	background-color #226cb7
+.telha3
+	background-color #f0f6fa
+.telha4
+	background-color #e5e5e5
+.telha5
+	background-color #d29c59
+.telha6
+	background-color #48a593
+.telha7
+	background-color #7487b2
+.telha8
+	background-color #279b80
+.telha9
+	background-color #cacac8
+.telha10
+	background-color #e5dcc0
+.telha11
+	background-color #e3c576
+.telha12
+	background-color #f4f5f6
+.telha13
+	background-color #757474
+.telha14
+	background-color #226cb7
+.telha15
+	background-color #f0f6fa
+.telha16
+	background-color #e5e5e5
+.telha17
+	background-color #d29c59
+.telha18
+	background-color #48a593
+.telha19
+	background-color #c13235
+.telha20
+	background-color #ff9a37
+.telha21
+	background-color #f6e281
+	
+.perfis1
+	background-color #767575
+.perfis2
+	background-color #226cb7
+.perfis3
+	background-color #f0f6fa
+.perfis4
+	background-color #e5e5e5
+.perfis5
+	background-color #d29c59
+.perfis6
+	background-color #48a593
+.perfis7
+	background-color #000
+.perfis8
+	background-color #d29c59
+.perfis9
+	background-color #f0f6fa
+.perfis10
+	background-color #e5e5e5
+	
+.video-container 
+	position relative
+	padding-bottom 56.25%
+	padding-top 30px 
+	height 0 
+	overflow hidden
+	iframe
+	object
+	embed 
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%

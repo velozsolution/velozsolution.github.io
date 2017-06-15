@@ -1,0 +1,37 @@
+title: Veloz Solution
+email: contato@velozsolution.com
+description: "A Veloz Solution Manutenção Predial oferece a seus clientes uma nova forma de garantir a conversação de suas instalações prediais de maneira preventiva baseada na inspeção continua da condição e estado, atuando sempre que necessário. Entre em contato pelo telefone (11) 4603-3056"
+baseurl: ""  
+url: "https://velozsolution.com" 
+
+facebook_user: https://www.facebook.com/velozsolution
+google_user: https://plus.google.com/u/0/b/109495929346689170889/109495929346689170889/about 
+
+markdown: kramdown
+
+links:
+  - title: Home
+    url: /
+  - title: Institucional
+    url: /institucional
+  - title: Economia Veloz
+    url: /economia-veloz
+  - title: Clientes
+    url: /clientes
+  - title: Contato
+    url: /contato
+  - title: Produtos <span class="new-produtos">new</span>
+    url: /produtos
+
+emaillink: <a href="mailto:contato@velozsolution.com">contato@velozsolution.com</a>
+phonelink: <a href="tel:+1146033056">(11) 4603-3056</a>
+celphonelink: <a href="tel:+11942738363">(11) 9 4273-8363</a>
+end: Professora Albina Fantini, 17. Jd. São Miguel - Bragança Paulista / SP
+
+exclude: ['package.json', 'src', 'node_modules', 'gulpfile.js']
+
+# html minify
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  profile: false

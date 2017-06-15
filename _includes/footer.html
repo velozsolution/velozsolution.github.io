@@ -1,0 +1,74 @@
+<div class="footer-top-bg"></div>
+<div class="newsletter" id="newsletter">
+  <div class="row">
+    <div class="newsletter-row">
+      <h3>Newsletter da Veloz Solution</h3>
+      <p>Cadastre seu melhor e-mail para receber nossas novidades, promoções, dicas e ficar por dentro de tudo sobre o mercado da construção civil.</p>
+      <form action="//velozsolution.us14.list-manage.com/subscribe/post?u=0e1dafa89b32dd627e91bce5d&amp;id=0c9d902f39" method="post" class="newsletter-form">
+        <label for="news" class="hidden">E-mail:</label>
+        <input type="text" id="news" name="EMAIL" placeholder="* seu melhor e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="ex.: seunome@gmail.com" required>
+        <button class="newsletter-btn">Cadastrar</button>
+      </form>
+      <span class="newsletter-security"><i class="icon-lock"></i>Suas informações estão 100% seguras!</span>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="/assets/img/logo-footer.png" alt="Logo branca da Toni construtora">
+  </div>
+  <div class="row">
+    <div class="col col-4 footer-contact">
+      <h4>Central de Atendimento</h4>
+      <ul>
+        <li>› <b>Tel:</b> {{ site.phonelink }}</li>
+        <li>› <b>Cel:</b> {{ site.celphonelink }} <span class="icon-whatsapp"></span></li>
+        <li>› <b>E-mail:</b> {{ site.emaillink }}</li>
+        <li>› <b>Rua:</b> {{ site.end }}</li>
+      </ul>
+    </div>
+    <div class="col col-4 footer-links">
+      <h4>Formas de Pagamento</h4>
+      <img src="/assets/img/pays.png" alt="Bandeiras dos meios de pagamentos">
+    </div>
+    <div class="col col-4 footer-social">
+      <h4>Conecte-se <span class="dest">Conosco</span></h4>
+      <ul>
+        <li>
+          <a href="{{ site.facebook_user }}" class="facebook" target="_blank" rel="nofollow"><span class="icon-facebook"></span></a>
+        </li>
+        <li>
+          <a href="{{ site.google_user }}" class="google" target="_blank" rel="nofollow"><span class="icon-google"></span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-copy">
+      <p>&copy; 2016 <a href="{{ site.url }}" title="Site">Veloz Solution Manutenção Predial</a><br>CNPJ 25176755/0001-72<br><a href="{{ "/termos-de-uso" | prepend: site.baseurl }}" target="_blank"> Termos de uso</a> | <a href="{{ "/politica-de-privacidade" | prepend: site.baseurl }}" target="_blank">Política de privacidade</a> | <a href="{{ "/faq" | prepend: site.baseurl }}">FAQ</a></p>
+    </div>
+  </div>
+  <div class="footer-bg"></div>
+</footer>
+<script src="{{ "/assets/js/main.min.js" | prepend: site.baseurl }}"></script>
+<script>
+  jQuery(document).ready(function($) {
+    $('.my-slider').unslider({
+      autoplay: true,
+      delay: 7000
+    });
+  });
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/580232fc277fb7280d9bf1da/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
